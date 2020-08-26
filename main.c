@@ -78,7 +78,7 @@ void login(){
 
 }
 void createac(){
-
+	system("cls");
 	printf("Enter username: ");
 	FILE *fp;
 	char username[40];
@@ -92,10 +92,12 @@ void createac(){
 		fflush(stdin);
         gets(password);
 		fwrite ( &password, sizeof ( password ), 1, fp ) ;
+		printf("***Account created***")
 		return;
 
     }
 	else{
+		system("cls");
 		printf("***Username alredy exist: ***");
 		return;
 	}
